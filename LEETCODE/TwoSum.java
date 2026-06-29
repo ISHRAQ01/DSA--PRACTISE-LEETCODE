@@ -6,8 +6,8 @@ class TwoSum {
     public static int[] twoSum() {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(2, 0);
-        map.put(7, 1);
-        map.put(11, 2);
+        map.put(6, 1);
+        map.put(7, 2);
         map.put(15, 3);
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             int value=entry.getKey();
