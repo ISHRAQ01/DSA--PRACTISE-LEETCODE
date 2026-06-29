@@ -15,7 +15,7 @@ public class MaximumBalloon{
         return Math.min(Math.min(b,a),Math.min(Math.min(o,l),n));
     }
     public static void main(String args[]){
-        String text="balon";
+        String text="balloon";
         System.out.println(MaxBalloon(text));
     }
 }
