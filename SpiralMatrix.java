@@ -34,11 +34,9 @@ class SpiralMatrix{
         System.out.println();
     }
     public static void main(String[] args){
-        int[][] matrix={{1},
-                        {2},
-                        {3},
-                        {4},
-                        {5}};
+        int[][] matrix={{1,2,3},
+                        {8,9,4},
+                        {7,6,5}};
         printSpiral(matrix);
     }
 }
