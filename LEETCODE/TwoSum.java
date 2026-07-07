@@ -3,23 +3,20 @@ import java.util.*;
 
 class TwoSum {
 
-    public static int[] twoSum() {
+    public static int[] twoSum(int[] a,int target) {
         Map<Integer, Integer> map = new HashMap<>();
-        map.put(2, 0);
-        map.put(6, 1);
-        map.put(7, 2);
-        map.put(15, 3);
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int value=entry.getKey();
-            int check=9-value;
+        for(int i=0;i<a.length;i++){
+            int check=target-a[i];
             if(map.containsKey(check)){
-                return new int[]{entry.getValue(),map.get(check)};
+                return new int[]{map.get(check),i};
             }
+            map.put(a[i],i);
         }
         return new int[]{};
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(twoSum()));
+        int[] arr={2,6,7,15};
+        System.out.println(Arrays.toString(twoSum(arr,9)));
     }
 }
