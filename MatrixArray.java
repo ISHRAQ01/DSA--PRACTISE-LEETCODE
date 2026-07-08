@@ -18,5 +18,6 @@ public class MatrixArray {
                 System.out.println("a["+i+"]["+j+"]"+"is "+a[i][j]);
             }
         }
+        sc.close();
     }
 }
